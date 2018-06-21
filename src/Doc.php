@@ -268,7 +268,7 @@ class Doc {
     }
 
     private static function _createDoc($ext, $data) {
-        $common = $content = "<?php\n/**\n* " . ucfirst($ext) . "自动补全类(基于最新的" . $data['version'] . "版本)\n* @author ryan(http://www.zhangenrui.com)\n* @modified " . date("Y/m/d") . "\n*/\n";
+        $common = $content = "<?php\n/**\n* " . ucfirst($ext) . "自动补全类(基于" . $data['version'] . "版本)\n* @author ryan(http://www.zhangenrui.com)\n* @modified " . date("Y/m/d") . "\n*/\n";
 
         $data['comment'] = str_replace("\n", "\n*", "\n" . $data['comment']);
         $content .= "\n/**" . $data['comment'] . "\n*/\n";
