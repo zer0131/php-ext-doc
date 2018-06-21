@@ -5,21 +5,17 @@
  * @desc: 生成器
  */
 
+ini_set('display_errors', 1);
+
 define('ROOT_PATH', __DIR__);
 define('DATA_PATH', ROOT_PATH.'/data');
 define('DICT_PATH', DATA_PATH.'/dict');
+define('OUTPUT_PATH', DATA_PATH . '/output');
 
-function help($bin, $package) {
-    echo "Usage: ".$bin." ".$package." create | dict \n";
-}
+require_once 'src/Tool.php';
+require_once 'src/Dict.php';
+require_once 'src/Doc.php';
 
-function create($package) {
-    //
-}
-
-function dict($package) {
-    //
-}
 
 function main() {
     if (!file_exists(DATA_PATH)) {
@@ -27,6 +23,9 @@ function main() {
     }
     if (!file_exists(DICT_PATH)) {
         mkdir(DICT_PATH);
+    }
+    if (!file_exists(OUTPUT_PATH)) {
+        mkdir(OUTPUT_PATH);
     }
 
     global $argv;
@@ -40,13 +39,13 @@ function main() {
 
     switch ($cmd) {
         case 'create':
-            create($package);
+            \PHPExtDoc\Doc::create($package);//生成文档
             break;
         case 'dict':
-            dict($package);
+            \PHPExtDoc\Dict::createDict($package);//生成字典
             break;
         default:
-            help($bin, $package);
+            echo "Usage: ".$bin." ".$package." create | dict \n";
     }
 }
 
