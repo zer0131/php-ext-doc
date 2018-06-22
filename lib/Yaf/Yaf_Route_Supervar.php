@@ -1,0 +1,58 @@
+<?php
+/**
+* Yaf自动补全类(基于3.0.5版本)
+* @author ryan(http://www.zhangenrui.com)
+* @modified 2018/06/22
+*/
+
+/**
+*
+*/
+final class Yaf_Route_Supervar implements Yaf_Route_Interface
+{
+    /**
+     * @var unknown $_var_name 
+     * 
+     * @access protected
+     */
+    protected $_var_name;
+
+    /**
+     * 
+     *
+     * @example 
+     * @param  mixed $supervar_name 
+     * @return 
+     */
+    public function __construct($supervar_name)
+    {
+    
+    }
+
+    /**
+     * 
+     *
+     * @example 
+     * @param  mixed $request 
+     * @return 
+     */
+    public function route($request)
+    {
+    
+    }
+
+    /**
+     * 
+     *
+     * @example 
+     * @param array $info 
+     * @param array $query 
+     * @return 
+     */
+    public function assemble(Array $info, Array $query)
+    {
+    
+    }
+
+}
+
