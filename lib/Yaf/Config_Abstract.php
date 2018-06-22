@@ -12,48 +12,48 @@ namespace Yaf;
 abstract class Config_Abstract
 {
     /**
-     * @var unknown $_config 
-     * 
+     * @var $_config
+     *
      * @access protected
      */
     protected $_config;
 
     /**
-     * @var bool $_readonly 
-     * 
+     * @var bool $_readonly
+     *
      * @access protected
      */
     protected $_readonly    =    true;
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return mixed
      */
     public abstract  function get();
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return Config_Abstract
      */
     public abstract  function set();
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return bool
      */
     public abstract  function readonly();
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return array
      */
     public abstract  function toArray();
 

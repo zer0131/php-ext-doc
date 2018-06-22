@@ -11,7 +11,7 @@
 abstract class Yaf_Config_Abstract
 {
     /**
-     * @var unknown $_config 
+     * @var $_config
      * 
      * @access protected
      */
@@ -28,7 +28,7 @@ abstract class Yaf_Config_Abstract
      * 
      *
      * @example 
-     * @return 
+     * @return mixed
      */
     public abstract  function get();
 
@@ -36,7 +36,7 @@ abstract class Yaf_Config_Abstract
      * 
      *
      * @example 
-     * @return 
+     * @return Yaf_Config_Abstract
      */
     public abstract  function set();
 
@@ -44,7 +44,7 @@ abstract class Yaf_Config_Abstract
      * 
      *
      * @example 
-     * @return 
+     * @return bool
      */
     public abstract  function readonly();
 
@@ -52,7 +52,7 @@ abstract class Yaf_Config_Abstract
      * 
      *
      * @example 
-     * @return 
+     * @return array
      */
     public abstract  function toArray();
 
