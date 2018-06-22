@@ -12,23 +12,23 @@ namespace Yaf;
 interface Route_Interface
 {
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $request 
-     * @return 
+     *
+     * @example
+     * @param  mixed $request
+     * @return bool
      */
     public function route($request);
 
     /**
-     * 
      *
-     * @example 
-     * @param array $info 
-     * @param array $query 
-     * @return 
+     *
+     * @example
+     * @param array $info
+     * @param array $query
+     * @return string
      */
-    public function assemble(Array $info, Array $query);
+    public function assemble(Array $info, array $query);
 
 }
 

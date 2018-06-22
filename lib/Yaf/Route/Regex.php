@@ -12,79 +12,78 @@ namespace Yaf\Route;
 final class Regex implements \Yaf\Route_Interface
 {
     /**
-     * @var unknown $_route 
-     * 
+     * @var $_route
+     *
      * @access protected
      */
     protected $_route;
 
     /**
-     * @var unknown $_default 
-     * 
+     * @var $_default
+     *
      * @access protected
      */
     protected $_default;
 
     /**
-     * @var unknown $_maps 
-     * 
+     * @var $_maps
+     *
      * @access protected
      */
     protected $_maps;
 
     /**
-     * @var unknown $_verify 
-     * 
+     * @var $_verify
+     *
      * @access protected
      */
     protected $_verify;
 
     /**
-     * @var unknown $_reverse 
-     * 
+     * @var $_reverse
+     *
      * @access protected
      */
     protected $_reverse;
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $match 
-     * @param array $route 
-     * @param array $map 
-     * @param array $verify 
-     * @param  mixed $reverse 
-     * @return 
+     *
+     * @example
+     * @param  mixed $match
+     * @param array $route
+     * @param array $map
+     * @param array $verify
+     * @param  mixed $reverse
      */
     public function __construct($match, Array $route, Array $map, Array $verify, $reverse)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $request 
-     * @return 
+     *
+     * @example
+     * @param  mixed $request
+     * @return bool
      */
     public function route($request)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param array $info 
-     * @param array $query 
-     * @return 
+     *
+     * @example
+     * @param array $info
+     * @param array $query
+     * @return string
      */
-    public function assemble(Array $info, Array $query)
+    public function assemble(array $info, array $query)
     {
-    
+
     }
 
 }

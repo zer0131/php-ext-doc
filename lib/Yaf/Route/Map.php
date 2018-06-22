@@ -12,55 +12,54 @@ namespace Yaf\Route;
 final class Map implements \Yaf\Route_Interface
 {
     /**
-     * @var bool $_ctl_router 
-     * 
+     * @var bool $_ctl_router
+     *
      * @access protected
      */
     protected $_ctl_router    =    false;
 
     /**
-     * @var unknown $_delimiter 
-     * 
+     * @var $_delimiter
+     *
      * @access protected
      */
     protected $_delimiter;
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $controller_prefer 
-     * @param  mixed $delimiter 
-     * @return 
+     *
+     * @example
+     * @param  mixed $controller_prefer
+     * @param  mixed $delimiter
      */
     public function __construct($controller_prefer, $delimiter)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $request 
-     * @return 
+     *
+     * @example
+     * @param  mixed $request
+     * @return bool
      */
     public function route($request)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param array $info 
-     * @param array $query 
-     * @return 
+     *
+     * @example
+     * @param array $info
+     * @param array $query
+     * @return string
      */
-    public function assemble(Array $info, Array $query)
+    public function assemble(array $info, array $query)
     {
-    
+
     }
 
 }

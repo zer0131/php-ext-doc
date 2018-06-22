@@ -8,17 +8,17 @@
 /**
 *
 */
-final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
+final class Yaf_Session implements Iterator, ArrayAccess, Countable
 {
     /**
-     * @var unknown $_instance 
+     * @var $_instance
      * 
      * @access protected
      */
     protected static  $_instance;
 
     /**
-     * @var unknown $_session 
+     * @var $_session
      * 
      * @access protected
      */
@@ -35,7 +35,6 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      * 
      *
      * @example 
-     * @return 
      */
     private function __construct()
     {
@@ -46,7 +45,6 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      * 
      *
      * @example 
-     * @return 
      */
     private function __clone()
     {
@@ -57,7 +55,6 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      * 
      *
      * @example 
-     * @return 
      */
     private function __sleep()
     {
@@ -68,7 +65,6 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      * 
      *
      * @example 
-     * @return 
      */
     private function __wakeup()
     {
@@ -79,7 +75,6 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      * 
      *
      * @example 
-     * @return 
      */
     public static  function getInstance()
     {
@@ -90,7 +85,7 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      * 
      *
      * @example 
-     * @return 
+     *  
      */
     public function start()
     {
@@ -102,7 +97,7 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      *
      * @example 
      * @param  mixed $name 
-     * @return 
+     *  
      */
     public function get($name)
     {
@@ -114,7 +109,7 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      *
      * @example 
      * @param  mixed $name 
-     * @return 
+     *  
      */
     public function has($name)
     {
@@ -127,7 +122,7 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      * @example 
      * @param  mixed $name 
      * @param  mixed $value 
-     * @return 
+     *  
      */
     public function set($name, $value)
     {
@@ -139,7 +134,7 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      *
      * @example 
      * @param  mixed $name 
-     * @return 
+     *  
      */
     public function del($name)
     {
@@ -150,7 +145,7 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      * 
      *
      * @example 
-     * @return 
+     *  
      */
     public function count()
     {
@@ -161,7 +156,7 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      * 
      *
      * @example 
-     * @return 
+     *  
      */
     public function rewind()
     {
@@ -172,7 +167,7 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      * 
      *
      * @example 
-     * @return 
+     *  
      */
     public function next()
     {
@@ -183,7 +178,7 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      * 
      *
      * @example 
-     * @return 
+     *  
      */
     public function current()
     {
@@ -194,7 +189,7 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      * 
      *
      * @example 
-     * @return 
+     *  
      */
     public function key()
     {
@@ -205,7 +200,7 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      * 
      *
      * @example 
-     * @return 
+     *  
      */
     public function valid()
     {
@@ -216,7 +211,7 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      * 
      *
      * @example 
-     * @return 
+     *  
      */
     public function clear()
     {
@@ -228,7 +223,7 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      *
      * @example 
      * @param  mixed $name 
-     * @return 
+     *  
      */
     public function offsetGet($name)
     {
@@ -241,7 +236,7 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      * @example 
      * @param  mixed $name 
      * @param  mixed $value 
-     * @return 
+     *  
      */
     public function offsetSet($name, $value)
     {
@@ -253,7 +248,7 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      *
      * @example 
      * @param  mixed $name 
-     * @return 
+     *  
      */
     public function offsetExists($name)
     {
@@ -265,7 +260,7 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      *
      * @example 
      * @param  mixed $name 
-     * @return 
+     *  
      */
     public function offsetUnset($name)
     {
@@ -277,7 +272,7 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      *
      * @example 
      * @param  mixed $name 
-     * @return 
+     *  
      */
     public function __get($name)
     {
@@ -289,7 +284,7 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      *
      * @example 
      * @param  mixed $name 
-     * @return 
+     *  
      */
     public function __isset($name)
     {
@@ -302,7 +297,7 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      * @example 
      * @param  mixed $name 
      * @param  mixed $value 
-     * @return 
+     *  
      */
     public function __set($name, $value)
     {
@@ -314,7 +309,7 @@ final class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable
      *
      * @example 
      * @param  mixed $name 
-     * @return 
+     *  
      */
     public function __unset($name)
     {

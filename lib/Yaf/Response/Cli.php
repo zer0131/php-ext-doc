@@ -11,148 +11,144 @@
 namespace Yaf\Response;
 class Cli extends \Yaf\Response_Abstract
 {
-    /**     
-    *
-    */
+    /**
+     *
+     */
     const DEFAULT_BODY    =    'content';
 
     /**
-     * @var unknown $_header 
-     * 
+     * @var $_header
+     *
      * @access protected
      */
     protected $_header;
 
     /**
-     * @var unknown $_body 
-     * 
+     * @var $_body
+     *
      * @access protected
      */
     protected $_body;
 
     /**
-     * @var bool $_sendheader 
-     * 
+     * @var bool $_sendheader
+     *
      * @access protected
      */
     protected $_sendheader    =    false;
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
      */
     public function __construct()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
      */
     public function __destruct()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
      */
     private function __clone()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return string
      */
     public function __toString()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $body 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $body
+     * @param  mixed $name
+     * @return bool
      */
     public function setBody($body, $name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $body 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $body
+     * @param  mixed $name
+     * @return bool
      */
     public function appendBody($body, $name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $body 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $body
+     * @param  mixed $name
+     * @return bool
      */
     public function prependBody($body, $name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     * @return bool
      */
     public function clearBody($name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     * @return mixed
      */
     public function getBody($name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
      */
     public function response()
     {
-    
+
     }
 
 }

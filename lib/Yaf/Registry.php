@@ -12,88 +12,84 @@ namespace Yaf;
 final class Registry
 {
     /**
-     * @var unknown $_instance 
-     * 
+     * @var $_instance
+     *
      * @access protected
      */
     protected static  $_instance;
 
     /**
-     * @var unknown $_entries 
-     * 
+     * @var $_entries
+     *
      * @access protected
      */
     protected $_entries;
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
      */
     private function __construct()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
      */
     private function __clone()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     * @return mixed
      */
     public static  function get($name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     * @return bool
      */
     public static  function has($name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @param  mixed $value 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     * @param  mixed $value
      */
     public static  function set($name, $value)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
      */
     public static  function del($name)
     {
-    
+
     }
 
 }

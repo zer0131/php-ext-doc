@@ -11,49 +11,49 @@
 class Yaf_Request_Http extends Yaf_Request_Abstract
 {
     /**
-     * @var unknown $module 
+     * @var $module
      * 
      * @access public
      */
     public $module;
 
     /**
-     * @var unknown $controller 
+     * @var $controller
      * 
      * @access public
      */
     public $controller;
 
     /**
-     * @var unknown $action 
+     * @var $action
      * 
      * @access public
      */
     public $action;
 
     /**
-     * @var unknown $method 
+     * @var $method
      * 
      * @access public
      */
     public $method;
 
     /**
-     * @var unknown $params 
+     * @var $params
      * 
      * @access protected
      */
     protected $params;
 
     /**
-     * @var unknown $language 
+     * @var $language
      * 
      * @access protected
      */
     protected $language;
 
     /**
-     * @var unknown $_exception 
+     * @var $_exception
      * 
      * @access protected
      */
@@ -91,7 +91,7 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
+     * @return mixed
      */
     public function getQuery()
     {
@@ -102,7 +102,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function getRequest()
     {
@@ -113,7 +112,7 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
+     * @return mixed
      */
     public function getPost()
     {
@@ -124,7 +123,7 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
+     * @return mixed
      */
     public function getCookie()
     {
@@ -135,7 +134,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function getFiles()
     {
@@ -146,7 +144,7 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
+     * @return mixed
      */
     public function get()
     {
@@ -157,7 +155,7 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
+     * @return bool
      */
     public function isXmlHttpRequest()
     {
@@ -168,7 +166,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function __construct()
     {
@@ -179,7 +176,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     private function __clone()
     {
@@ -190,7 +186,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isGet()
     {
@@ -201,7 +196,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isPost()
     {
@@ -212,7 +206,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isDelete()
     {
@@ -223,7 +216,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isPatch()
     {
@@ -234,7 +226,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isPut()
     {
@@ -245,7 +236,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isHead()
     {
@@ -256,7 +246,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isOptions()
     {
@@ -267,7 +256,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isCli()
     {
@@ -280,7 +268,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * @example 
      * @param  mixed $name 
      * @param  mixed $default 
-     * @return 
      */
     public function getServer($name, $default)
     {
@@ -293,7 +280,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * @example 
      * @param  mixed $name 
      * @param  mixed $default 
-     * @return 
      */
     public function getEnv($name, $default)
     {
@@ -306,7 +292,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * @example 
      * @param  mixed $name 
      * @param  mixed $value 
-     * @return 
      */
     public function setParam($name, $value)
     {
@@ -319,7 +304,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * @example 
      * @param  mixed $name 
      * @param  mixed $default 
-     * @return 
      */
     public function getParam($name, $default)
     {
@@ -330,7 +314,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function getParams()
     {
@@ -341,7 +324,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function getException()
     {
@@ -352,7 +334,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function getModuleName()
     {
@@ -363,7 +344,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function getControllerName()
     {
@@ -374,7 +354,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function getActionName()
     {
@@ -386,7 +365,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      *
      * @example 
      * @param  mixed $module 
-     * @return 
      */
     public function setModuleName($module)
     {
@@ -398,7 +376,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      *
      * @example 
      * @param  mixed $controller 
-     * @return 
      */
     public function setControllerName($controller)
     {
@@ -410,7 +387,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      *
      * @example 
      * @param  mixed $action 
-     * @return 
      */
     public function setActionName($action)
     {
@@ -421,7 +397,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function getMethod()
     {
@@ -432,7 +407,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function getLanguage()
     {
@@ -444,7 +418,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      *
      * @example 
      * @param  mixed $uri 
-     * @return 
      */
     public function setBaseUri($uri)
     {
@@ -455,7 +428,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function getBaseUri()
     {
@@ -466,7 +438,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function getRequestUri()
     {
@@ -478,7 +449,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      *
      * @example 
      * @param  mixed $uri 
-     * @return 
      */
     public function setRequestUri($uri)
     {
@@ -489,7 +459,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isDispatched()
     {
@@ -500,7 +469,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function setDispatched()
     {
@@ -511,7 +479,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isRouted()
     {
@@ -523,7 +490,6 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      *
      * @example 
      * @param  mixed $flag 
-     * @return 
      */
     public function setRouted($flag)
     {

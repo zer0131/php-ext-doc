@@ -11,21 +11,21 @@
 class Yaf_View_Simple implements Yaf_View_Interface
 {
     /**
-     * @var unknown $_tpl_vars 
+     * @var $_tpl_vars
      * 
      * @access protected
      */
     protected $_tpl_vars;
 
     /**
-     * @var unknown $_tpl_dir 
+     * @var $_tpl_dir
      * 
      * @access protected
      */
     protected $_tpl_dir;
 
     /**
-     * @var unknown $_options 
+     * @var $_options
      * 
      * @access protected
      */
@@ -37,7 +37,6 @@ class Yaf_View_Simple implements Yaf_View_Interface
      * @example 
      * @param  mixed $template_dir 
      * @param array $options 
-     * @return 
      */
     public final  function __construct($template_dir, Array $options)
     {
@@ -49,7 +48,7 @@ class Yaf_View_Simple implements Yaf_View_Interface
      *
      * @example 
      * @param  mixed $name 
-     * @return 
+     * @return void
      */
     public function __isset($name)
     {
@@ -61,7 +60,7 @@ class Yaf_View_Simple implements Yaf_View_Interface
      *
      * @example 
      * @param  mixed $name 
-     * @return 
+     * @return void
      */
     public function get($name)
     {
@@ -74,7 +73,7 @@ class Yaf_View_Simple implements Yaf_View_Interface
      * @example 
      * @param  mixed $name 
      * @param  mixed $value 
-     * @return 
+     * @return bool
      */
     public function assign($name, $value)
     {
@@ -87,7 +86,7 @@ class Yaf_View_Simple implements Yaf_View_Interface
      * @example 
      * @param  mixed $tpl 
      * @param  mixed $tpl_vars 
-     * @return 
+     * @return string
      */
     public function render($tpl, $tpl_vars)
     {
@@ -100,7 +99,7 @@ class Yaf_View_Simple implements Yaf_View_Interface
      * @example 
      * @param  mixed $tpl_str 
      * @param  mixed $vars 
-     * @return 
+     * @return string
      */
     public function eval($tpl_str, $vars)
     {
@@ -113,7 +112,7 @@ class Yaf_View_Simple implements Yaf_View_Interface
      * @example 
      * @param  mixed $tpl 
      * @param  mixed $tpl_vars 
-     * @return 
+     * @return bool
      */
     public function display($tpl, $tpl_vars)
     {
@@ -126,7 +125,7 @@ class Yaf_View_Simple implements Yaf_View_Interface
      * @example 
      * @param  mixed $name 
      * @param  mixed $value 
-     * @return 
+     * @return bool
      */
     public function assignRef($name, $value)
     {
@@ -138,7 +137,7 @@ class Yaf_View_Simple implements Yaf_View_Interface
      *
      * @example 
      * @param  mixed $name 
-     * @return 
+     * @return bool
      */
     public function clear($name)
     {
@@ -150,7 +149,7 @@ class Yaf_View_Simple implements Yaf_View_Interface
      *
      * @example 
      * @param  mixed $template_dir 
-     * @return 
+     * @return bool
      */
     public function setScriptPath($template_dir)
     {
@@ -161,7 +160,7 @@ class Yaf_View_Simple implements Yaf_View_Interface
      * 
      *
      * @example 
-     * @return 
+     * @return string
      */
     public function getScriptPath()
     {
@@ -173,7 +172,7 @@ class Yaf_View_Simple implements Yaf_View_Interface
      *
      * @example 
      * @param  mixed $name 
-     * @return 
+     * @return void
      */
     public function __get($name)
     {
@@ -186,7 +185,7 @@ class Yaf_View_Simple implements Yaf_View_Interface
      * @example 
      * @param  mixed $name 
      * @param  mixed $value 
-     * @return 
+     * @return void
      */
     public function __set($name, $value)
     {

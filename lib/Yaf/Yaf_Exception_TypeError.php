@@ -11,21 +11,21 @@
 class Yaf_Exception_TypeError extends Yaf_Exception implements Throwable
 {
     /**
-     * @var unknown $file 
+     * @var $file
      * 
      * @access protected
      */
     protected $file;
 
     /**
-     * @var unknown $line 
+     * @var $line
      * 
      * @access protected
      */
     protected $line;
 
     /**
-     * @var unknown $message 
+     * @var $message
      * 
      * @access protected
      */
@@ -39,7 +39,7 @@ class Yaf_Exception_TypeError extends Yaf_Exception implements Throwable
     protected $code    =    0;
 
     /**
-     * @var unknown $previous 
+     * @var $previous
      * 
      * @access protected
      */
@@ -49,7 +49,6 @@ class Yaf_Exception_TypeError extends Yaf_Exception implements Throwable
      * 
      *
      * @example 
-     * @return 
      */
     private final  function __clone()
     {
@@ -63,7 +62,6 @@ class Yaf_Exception_TypeError extends Yaf_Exception implements Throwable
      * @param  mixed $message 
      * @param  mixed $code 
      * @param  mixed $previous 
-     * @return 
      */
     public function __construct($message, $code, $previous)
     {
@@ -74,7 +72,6 @@ class Yaf_Exception_TypeError extends Yaf_Exception implements Throwable
      * 
      *
      * @example 
-     * @return 
      */
     public function __wakeup()
     {
@@ -85,84 +82,7 @@ class Yaf_Exception_TypeError extends Yaf_Exception implements Throwable
      * 
      *
      * @example 
-     * @return 
-     */
-    public final  function getMessage()
-    {
-    
-    }
-
-    /**
-     * 
-     *
-     * @example 
-     * @return 
-     */
-    public final  function getCode()
-    {
-    
-    }
-
-    /**
-     * 
-     *
-     * @example 
-     * @return 
-     */
-    public final  function getFile()
-    {
-    
-    }
-
-    /**
-     * 
-     *
-     * @example 
-     * @return 
-     */
-    public final  function getLine()
-    {
-    
-    }
-
-    /**
-     * 
-     *
-     * @example 
-     * @return 
-     */
-    public final  function getTrace()
-    {
-    
-    }
-
-    /**
-     * 
-     *
-     * @example 
-     * @return 
-     */
-    public final  function getPrevious()
-    {
-    
-    }
-
-    /**
-     * 
-     *
-     * @example 
-     * @return 
-     */
-    public final  function getTraceAsString()
-    {
-    
-    }
-
-    /**
-     * 
-     *
-     * @example 
-     * @return 
+     * @return string
      */
     public function __toString()
     {

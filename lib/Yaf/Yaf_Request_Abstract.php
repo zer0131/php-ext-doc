@@ -21,49 +21,49 @@ abstract class Yaf_Request_Abstract
     const SCHEME_HTTPS    =    'https';
 
     /**
-     * @var unknown $module 
+     * @var $module
      * 
      * @access public
      */
     public $module;
 
     /**
-     * @var unknown $controller 
+     * @var $controller
      * 
      * @access public
      */
     public $controller;
 
     /**
-     * @var unknown $action 
+     * @var $action
      * 
      * @access public
      */
     public $action;
 
     /**
-     * @var unknown $method 
+     * @var $method
      * 
      * @access public
      */
     public $method;
 
     /**
-     * @var unknown $params 
+     * @var $params
      * 
      * @access protected
      */
     protected $params;
 
     /**
-     * @var unknown $language 
+     * @var $language
      * 
      * @access protected
      */
     protected $language;
 
     /**
-     * @var unknown $_exception 
+     * @var $_exception
      * 
      * @access protected
      */
@@ -101,7 +101,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isGet()
     {
@@ -112,7 +111,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isPost()
     {
@@ -123,7 +121,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isDelete()
     {
@@ -134,7 +131,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isPatch()
     {
@@ -145,7 +141,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isPut()
     {
@@ -156,7 +151,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isHead()
     {
@@ -167,7 +161,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isOptions()
     {
@@ -178,7 +171,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isCli()
     {
@@ -189,7 +181,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isXmlHttpRequest()
     {
@@ -202,7 +193,6 @@ abstract class Yaf_Request_Abstract
      * @example 
      * @param  mixed $name 
      * @param  mixed $default 
-     * @return 
      */
     public function getServer($name, $default)
     {
@@ -215,7 +205,6 @@ abstract class Yaf_Request_Abstract
      * @example 
      * @param  mixed $name 
      * @param  mixed $default 
-     * @return 
      */
     public function getEnv($name, $default)
     {
@@ -228,7 +217,6 @@ abstract class Yaf_Request_Abstract
      * @example 
      * @param  mixed $name 
      * @param  mixed $value 
-     * @return 
      */
     public function setParam($name, $value)
     {
@@ -241,7 +229,6 @@ abstract class Yaf_Request_Abstract
      * @example 
      * @param  mixed $name 
      * @param  mixed $default 
-     * @return 
      */
     public function getParam($name, $default)
     {
@@ -252,7 +239,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function getParams()
     {
@@ -263,7 +249,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function getException()
     {
@@ -274,7 +259,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function getModuleName()
     {
@@ -285,7 +269,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function getControllerName()
     {
@@ -296,7 +279,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function getActionName()
     {
@@ -308,7 +290,6 @@ abstract class Yaf_Request_Abstract
      *
      * @example 
      * @param  mixed $module 
-     * @return 
      */
     public function setModuleName($module)
     {
@@ -320,7 +301,6 @@ abstract class Yaf_Request_Abstract
      *
      * @example 
      * @param  mixed $controller 
-     * @return 
      */
     public function setControllerName($controller)
     {
@@ -332,7 +312,6 @@ abstract class Yaf_Request_Abstract
      *
      * @example 
      * @param  mixed $action 
-     * @return 
      */
     public function setActionName($action)
     {
@@ -343,7 +322,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function getMethod()
     {
@@ -354,7 +332,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function getLanguage()
     {
@@ -366,7 +343,6 @@ abstract class Yaf_Request_Abstract
      *
      * @example 
      * @param  mixed $uri 
-     * @return 
      */
     public function setBaseUri($uri)
     {
@@ -377,7 +353,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function getBaseUri()
     {
@@ -388,7 +363,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function getRequestUri()
     {
@@ -400,7 +374,6 @@ abstract class Yaf_Request_Abstract
      *
      * @example 
      * @param  mixed $uri 
-     * @return 
      */
     public function setRequestUri($uri)
     {
@@ -411,7 +384,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isDispatched()
     {
@@ -422,7 +394,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function setDispatched()
     {
@@ -433,7 +404,6 @@ abstract class Yaf_Request_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function isRouted()
     {
@@ -445,7 +415,6 @@ abstract class Yaf_Request_Abstract
      *
      * @example 
      * @param  mixed $flag 
-     * @return 
      */
     public function setRouted($flag)
     {

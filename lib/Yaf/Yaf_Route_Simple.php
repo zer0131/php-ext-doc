@@ -11,21 +11,21 @@
 final class Yaf_Route_Simple implements Yaf_Route_Interface
 {
     /**
-     * @var unknown $controller 
+     * @var $controller
      * 
      * @access protected
      */
     protected $controller;
 
     /**
-     * @var unknown $module 
+     * @var $module
      * 
      * @access protected
      */
     protected $module;
 
     /**
-     * @var unknown $action 
+     * @var $action
      * 
      * @access protected
      */
@@ -38,7 +38,6 @@ final class Yaf_Route_Simple implements Yaf_Route_Interface
      * @param  mixed $module_name 
      * @param  mixed $controller_name 
      * @param  mixed $action_name 
-     * @return 
      */
     public function __construct($module_name, $controller_name, $action_name)
     {
@@ -50,7 +49,7 @@ final class Yaf_Route_Simple implements Yaf_Route_Interface
      *
      * @example 
      * @param  mixed $request 
-     * @return 
+     * @return bool
      */
     public function route($request)
     {
@@ -63,7 +62,7 @@ final class Yaf_Route_Simple implements Yaf_Route_Interface
      * @example 
      * @param array $info 
      * @param array $query 
-     * @return 
+     * @return string
      */
     public function assemble(Array $info, Array $query)
     {

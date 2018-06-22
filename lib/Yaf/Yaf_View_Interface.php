@@ -16,7 +16,7 @@ interface Yaf_View_Interface
      * @example 
      * @param  mixed $name 
      * @param  mixed $value 
-     * @return 
+     * @return bool
      */
     public function assign($name, $value);
 
@@ -26,7 +26,7 @@ interface Yaf_View_Interface
      * @example 
      * @param  mixed $tpl 
      * @param  mixed $tpl_vars 
-     * @return 
+     * @return bool
      */
     public function display($tpl, $tpl_vars);
 
@@ -36,7 +36,7 @@ interface Yaf_View_Interface
      * @example 
      * @param  mixed $tpl 
      * @param  mixed $tpl_vars 
-     * @return 
+     * @return string
      */
     public function render($tpl, $tpl_vars);
 
@@ -45,7 +45,7 @@ interface Yaf_View_Interface
      *
      * @example 
      * @param  mixed $template_dir 
-     * @return 
+     * @return void
      */
     public function setScriptPath($template_dir);
 
@@ -53,7 +53,7 @@ interface Yaf_View_Interface
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     public function getScriptPath();
 

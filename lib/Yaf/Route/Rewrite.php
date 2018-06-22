@@ -12,63 +12,62 @@ namespace Yaf\Route;
 final class Rewrite implements \Yaf\Route_Interface
 {
     /**
-     * @var unknown $_route 
-     * 
+     * @var $_route
+     *
      * @access protected
      */
     protected $_route;
 
     /**
-     * @var unknown $_default 
-     * 
+     * @var $_default
+     *
      * @access protected
      */
     protected $_default;
 
     /**
-     * @var unknown $_verify 
-     * 
+     * @var $_verify
+     *
      * @access protected
      */
     protected $_verify;
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $match 
-     * @param array $route 
-     * @param array $verify 
-     * @return 
+     *
+     * @example
+     * @param  mixed $match
+     * @param array $route
+     * @param array $verify
      */
     public function __construct($match, Array $route, Array $verify)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $request 
-     * @return 
+     *
+     * @example
+     * @param  mixed $request
+     * @return bool
      */
     public function route($request)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param array $info 
-     * @param array $query 
-     * @return 
+     *
+     * @example
+     * @param array $info
+     * @param array $query
+     * @return string
      */
     public function assemble(Array $info, Array $query)
     {
-    
+
     }
 
 }

@@ -12,40 +12,39 @@ namespace Yaf;
 class Route_Static implements \Yaf\Route_Interface
 {
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $uri 
-     * @return 
+     *
+     * @example
+     * @param  mixed $uri
      */
     public function match($uri)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $request 
-     * @return 
+     *
+     * @example
+     * @param  mixed $request
+     * @return bool
      */
     public function route($request)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param array $info 
-     * @param array $query 
-     * @return 
+     *
+     * @example
+     * @param array $info
+     * @param array $query
+     * @return string
      */
     public function assemble(Array $info, Array $query)
     {
-    
+
     }
 
 }

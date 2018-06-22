@@ -11,14 +11,14 @@
 final class Yaf_Registry
 {
     /**
-     * @var unknown $_instance 
+     * @var $_instance
      * 
      * @access protected
      */
     protected static  $_instance;
 
     /**
-     * @var unknown $_entries 
+     * @var $_entries
      * 
      * @access protected
      */
@@ -28,7 +28,6 @@ final class Yaf_Registry
      * 
      *
      * @example 
-     * @return 
      */
     private function __construct()
     {
@@ -39,7 +38,6 @@ final class Yaf_Registry
      * 
      *
      * @example 
-     * @return 
      */
     private function __clone()
     {
@@ -51,7 +49,7 @@ final class Yaf_Registry
      *
      * @example 
      * @param  mixed $name 
-     * @return 
+     * @return mixed
      */
     public static  function get($name)
     {
@@ -63,7 +61,7 @@ final class Yaf_Registry
      *
      * @example 
      * @param  mixed $name 
-     * @return 
+     * @return bool
      */
     public static  function has($name)
     {
@@ -76,7 +74,6 @@ final class Yaf_Registry
      * @example 
      * @param  mixed $name 
      * @param  mixed $value 
-     * @return 
      */
     public static  function set($name, $value)
     {
@@ -88,7 +85,6 @@ final class Yaf_Registry
      *
      * @example 
      * @param  mixed $name 
-     * @return 
      */
     public static  function del($name)
     {

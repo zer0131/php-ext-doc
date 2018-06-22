@@ -11,7 +11,7 @@
 final class Yaf_Route_Supervar implements Yaf_Route_Interface
 {
     /**
-     * @var unknown $_var_name 
+     * @var $_var_name
      * 
      * @access protected
      */
@@ -22,7 +22,6 @@ final class Yaf_Route_Supervar implements Yaf_Route_Interface
      *
      * @example 
      * @param  mixed $supervar_name 
-     * @return 
      */
     public function __construct($supervar_name)
     {
@@ -34,7 +33,7 @@ final class Yaf_Route_Supervar implements Yaf_Route_Interface
      *
      * @example 
      * @param  mixed $request 
-     * @return 
+     * @return bool
      */
     public function route($request)
     {
@@ -47,7 +46,7 @@ final class Yaf_Route_Supervar implements Yaf_Route_Interface
      * @example 
      * @param array $info 
      * @param array $query 
-     * @return 
+     * @return string
      */
     public function assemble(Array $info, Array $query)
     {

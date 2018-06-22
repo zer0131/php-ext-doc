@@ -9,317 +9,312 @@
 *
 */
 namespace Yaf;
-final class Session implements \Iterator,\Traversable,\ArrayAccess,\Countable
+final class Session implements \Iterator,\ArrayAccess,\Countable
 {
     /**
-     * @var unknown $_instance 
-     * 
+     * @var $_instance
+     *
      * @access protected
      */
     protected static  $_instance;
 
     /**
-     * @var unknown $_session 
-     * 
+     * @var $_session
+     *
      * @access protected
      */
     protected $_session;
 
     /**
-     * @var bool $_started 
-     * 
+     * @var bool $_started
+     *
      * @access protected
      */
     protected $_started    =    false;
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
      */
     private function __construct()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
      */
     private function __clone()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
      */
     private function __sleep()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
      */
     private function __wakeup()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
      */
     public static  function getInstance()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     *
      */
     public function start()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     *
      */
     public function get($name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     *
      */
     public function has($name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @param  mixed $value 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     * @param  mixed $value
+     *
      */
     public function set($name, $value)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     *
      */
     public function del($name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     *
      */
     public function count()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     *
      */
     public function rewind()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     *
      */
     public function next()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     *
      */
     public function current()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     *
      */
     public function key()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     *
      */
     public function valid()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     *
      */
     public function clear()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     *
      */
     public function offsetGet($name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @param  mixed $value 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     * @param  mixed $value
+     *
      */
     public function offsetSet($name, $value)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     *
      */
     public function offsetExists($name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     *
      */
     public function offsetUnset($name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     *
      */
     public function __get($name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     *
      */
     public function __isset($name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @param  mixed $value 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     * @param  mixed $value
+     *
      */
     public function __set($name, $value)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     *
      */
     public function __unset($name)
     {
-    
+
     }
 
 }

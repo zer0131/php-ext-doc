@@ -12,49 +12,49 @@ namespace Yaf;
 interface View_Interface
 {
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @param  mixed $value 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     * @param  mixed $value
+     * @return bool
      */
     public function assign($name, $value);
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $tpl 
-     * @param  mixed $tpl_vars 
-     * @return 
+     *
+     * @example
+     * @param  mixed $tpl
+     * @param  mixed $tpl_vars
+     * @return bool
      */
     public function display($tpl, $tpl_vars);
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $tpl 
-     * @param  mixed $tpl_vars 
-     * @return 
+     *
+     * @example
+     * @param  mixed $tpl
+     * @param  mixed $tpl_vars
+     * @return string
      */
     public function render($tpl, $tpl_vars);
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $template_dir 
-     * @return 
+     *
+     * @example
+     * @param  mixed $template_dir
+     * @return void
      */
     public function setScriptPath($template_dir);
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return void
      */
     public function getScriptPath();
 

@@ -11,21 +11,21 @@
 final class Yaf_Route_Rewrite implements Yaf_Route_Interface
 {
     /**
-     * @var unknown $_route 
+     * @var $_route
      * 
      * @access protected
      */
     protected $_route;
 
     /**
-     * @var unknown $_default 
+     * @var $_default
      * 
      * @access protected
      */
     protected $_default;
 
     /**
-     * @var unknown $_verify 
+     * @var $_verify
      * 
      * @access protected
      */
@@ -38,7 +38,6 @@ final class Yaf_Route_Rewrite implements Yaf_Route_Interface
      * @param  mixed $match 
      * @param array $route 
      * @param array $verify 
-     * @return 
      */
     public function __construct($match, Array $route, Array $verify)
     {
@@ -50,7 +49,7 @@ final class Yaf_Route_Rewrite implements Yaf_Route_Interface
      *
      * @example 
      * @param  mixed $request 
-     * @return 
+     * @return bool
      */
     public function route($request)
     {
@@ -63,7 +62,7 @@ final class Yaf_Route_Rewrite implements Yaf_Route_Interface
      * @example 
      * @param array $info 
      * @param array $query 
-     * @return 
+     * @return string
      */
     public function assemble(Array $info, Array $query)
     {

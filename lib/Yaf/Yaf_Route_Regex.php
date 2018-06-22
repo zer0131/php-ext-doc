@@ -11,35 +11,35 @@
 final class Yaf_Route_Regex implements Yaf_Route_Interface
 {
     /**
-     * @var unknown $_route 
+     * @var $_route
      * 
      * @access protected
      */
     protected $_route;
 
     /**
-     * @var unknown $_default 
+     * @var $_default
      * 
      * @access protected
      */
     protected $_default;
 
     /**
-     * @var unknown $_maps 
+     * @var $_maps
      * 
      * @access protected
      */
     protected $_maps;
 
     /**
-     * @var unknown $_verify 
+     * @var $_verify
      * 
      * @access protected
      */
     protected $_verify;
 
     /**
-     * @var unknown $_reverse 
+     * @var $_reverse
      * 
      * @access protected
      */
@@ -54,7 +54,6 @@ final class Yaf_Route_Regex implements Yaf_Route_Interface
      * @param array $map 
      * @param array $verify 
      * @param  mixed $reverse 
-     * @return 
      */
     public function __construct($match, Array $route, Array $map, Array $verify, $reverse)
     {
@@ -66,7 +65,7 @@ final class Yaf_Route_Regex implements Yaf_Route_Interface
      *
      * @example 
      * @param  mixed $request 
-     * @return 
+     * @return bool
      */
     public function route($request)
     {
@@ -79,9 +78,9 @@ final class Yaf_Route_Regex implements Yaf_Route_Interface
      * @example 
      * @param array $info 
      * @param array $query 
-     * @return 
+     * @return string
      */
-    public function assemble(Array $info, Array $query)
+    public function assemble(array $info, array $query)
     {
     
     }

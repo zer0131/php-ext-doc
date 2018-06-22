@@ -12,63 +12,62 @@ namespace Yaf\Route;
 final class Simple implements \Yaf\Route_Interface
 {
     /**
-     * @var unknown $controller 
-     * 
+     * @var $controller
+     *
      * @access protected
      */
     protected $controller;
 
     /**
-     * @var unknown $module 
-     * 
+     * @var $module
+     *
      * @access protected
      */
     protected $module;
 
     /**
-     * @var unknown $action 
-     * 
+     * @var $action
+     *
      * @access protected
      */
     protected $action;
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $module_name 
-     * @param  mixed $controller_name 
-     * @param  mixed $action_name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $module_name
+     * @param  mixed $controller_name
+     * @param  mixed $action_name
      */
     public function __construct($module_name, $controller_name, $action_name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $request 
-     * @return 
+     *
+     * @example
+     * @param  mixed $request
+     * @return bool
      */
     public function route($request)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param array $info 
-     * @param array $query 
-     * @return 
+     *
+     * @example
+     * @param array $info
+     * @param array $query
+     * @return string
      */
     public function assemble(Array $info, Array $query)
     {
-    
+
     }
 
 }

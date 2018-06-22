@@ -12,94 +12,90 @@ namespace Yaf;
 final class Router
 {
     /**
-     * @var unknown $_routes 
-     * 
+     * @var $_routes
+     *
      * @access protected
      */
     protected $_routes;
 
     /**
-     * @var unknown $_current 
-     * 
+     * @var $_current
+     *
      * @access protected
      */
     protected $_current;
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
      */
     public function __construct()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return \Yaf\Router
      */
     public function addRoute()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
      */
     public function addConfig()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return bool
      */
     public function route()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
      */
     public function getRoute()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
      */
     public function getRoutes()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return string
      */
     public function getCurrentRoute()
     {
-    
+
     }
 
 }

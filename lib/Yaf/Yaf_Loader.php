@@ -11,21 +11,21 @@
 final class Yaf_Loader
 {
     /**
-     * @var unknown $_library 
+     * @var $_library
      * 
      * @access protected
      */
     protected $_library;
 
     /**
-     * @var unknown $_global_library 
+     * @var $_global_library
      * 
      * @access protected
      */
     protected $_global_library;
 
     /**
-     * @var unknown $_instance 
+     * @var $_instance
      * 
      * @access protected
      */
@@ -35,7 +35,6 @@ final class Yaf_Loader
      * 
      *
      * @example 
-     * @return 
      */
     private function __construct()
     {
@@ -46,7 +45,7 @@ final class Yaf_Loader
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     private function __clone()
     {
@@ -57,7 +56,7 @@ final class Yaf_Loader
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     private function __sleep()
     {
@@ -68,7 +67,7 @@ final class Yaf_Loader
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     private function __wakeup()
     {
@@ -80,7 +79,7 @@ final class Yaf_Loader
      *
      * @example 
      * @param  mixed $class_name 
-     * @return 
+     * @return void
      */
     public function autoload($class_name)
     {
@@ -93,7 +92,7 @@ final class Yaf_Loader
      * @example 
      * @param  mixed $local_library_path 
      * @param  mixed $global_library_path 
-     * @return 
+     * @return void
      */
     public static  function getInstance($local_library_path, $global_library_path)
     {
@@ -105,7 +104,7 @@ final class Yaf_Loader
      *
      * @example 
      * @param  mixed $name_prefix 
-     * @return 
+     * @return void
      */
     public function registerLocalNamespace($name_prefix)
     {
@@ -116,7 +115,7 @@ final class Yaf_Loader
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     public function getLocalNamespace()
     {
@@ -127,7 +126,7 @@ final class Yaf_Loader
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     public function clearLocalNamespace()
     {
@@ -139,7 +138,7 @@ final class Yaf_Loader
      *
      * @example 
      * @param  mixed $class_name 
-     * @return 
+     * @return void
      */
     public function isLocalName($class_name)
     {
@@ -151,7 +150,7 @@ final class Yaf_Loader
      *
      * @example 
      * @param  mixed $file 
-     * @return 
+     * @return static
      */
     public static  function import($file)
     {
@@ -164,7 +163,7 @@ final class Yaf_Loader
      * @example 
      * @param  mixed $library_path 
      * @param  mixed $is_global 
-     * @return 
+     * @return Yaf_Loader
      */
     public function setLibraryPath($library_path, $is_global)
     {
@@ -176,7 +175,7 @@ final class Yaf_Loader
      *
      * @example 
      * @param  mixed $is_global 
-     * @return 
+     * @return Yaf_Loader
      */
     public function getLibraryPath($is_global)
     {

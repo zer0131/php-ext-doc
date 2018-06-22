@@ -11,14 +11,14 @@
 final class Yaf_Router
 {
     /**
-     * @var unknown $_routes 
+     * @var $_routes
      * 
      * @access protected
      */
     protected $_routes;
 
     /**
-     * @var unknown $_current 
+     * @var $_current
      * 
      * @access protected
      */
@@ -28,7 +28,6 @@ final class Yaf_Router
      * 
      *
      * @example 
-     * @return 
      */
     public function __construct()
     {
@@ -39,7 +38,7 @@ final class Yaf_Router
      * 
      *
      * @example 
-     * @return 
+     * @return Yaf_Router
      */
     public function addRoute()
     {
@@ -50,7 +49,6 @@ final class Yaf_Router
      * 
      *
      * @example 
-     * @return 
      */
     public function addConfig()
     {
@@ -61,7 +59,7 @@ final class Yaf_Router
      * 
      *
      * @example 
-     * @return 
+     * @return bool
      */
     public function route()
     {
@@ -72,7 +70,6 @@ final class Yaf_Router
      * 
      *
      * @example 
-     * @return 
      */
     public function getRoute()
     {
@@ -83,7 +80,6 @@ final class Yaf_Router
      * 
      *
      * @example 
-     * @return 
      */
     public function getRoutes()
     {
@@ -94,7 +90,7 @@ final class Yaf_Router
      * 
      *
      * @example 
-     * @return 
+     * @return string
      */
     public function getCurrentRoute()
     {

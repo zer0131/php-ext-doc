@@ -16,14 +16,14 @@ class Yaf_Response_Cli extends Yaf_Response_Abstract
     const DEFAULT_BODY    =    'content';
 
     /**
-     * @var unknown $_header 
+     * @var $_header
      * 
      * @access protected
      */
     protected $_header;
 
     /**
-     * @var unknown $_body 
+     * @var $_body
      * 
      * @access protected
      */
@@ -40,7 +40,6 @@ class Yaf_Response_Cli extends Yaf_Response_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function __construct()
     {
@@ -51,7 +50,6 @@ class Yaf_Response_Cli extends Yaf_Response_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function __destruct()
     {
@@ -62,7 +60,6 @@ class Yaf_Response_Cli extends Yaf_Response_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     private function __clone()
     {
@@ -73,7 +70,7 @@ class Yaf_Response_Cli extends Yaf_Response_Abstract
      * 
      *
      * @example 
-     * @return 
+     * @return string
      */
     public function __toString()
     {
@@ -86,7 +83,7 @@ class Yaf_Response_Cli extends Yaf_Response_Abstract
      * @example 
      * @param  mixed $body 
      * @param  mixed $name 
-     * @return 
+     * @return bool
      */
     public function setBody($body, $name)
     {
@@ -99,7 +96,7 @@ class Yaf_Response_Cli extends Yaf_Response_Abstract
      * @example 
      * @param  mixed $body 
      * @param  mixed $name 
-     * @return 
+     * @return bool
      */
     public function appendBody($body, $name)
     {
@@ -112,7 +109,7 @@ class Yaf_Response_Cli extends Yaf_Response_Abstract
      * @example 
      * @param  mixed $body 
      * @param  mixed $name 
-     * @return 
+     * @return bool
      */
     public function prependBody($body, $name)
     {
@@ -124,7 +121,7 @@ class Yaf_Response_Cli extends Yaf_Response_Abstract
      *
      * @example 
      * @param  mixed $name 
-     * @return 
+     * @return bool
      */
     public function clearBody($name)
     {
@@ -136,7 +133,7 @@ class Yaf_Response_Cli extends Yaf_Response_Abstract
      *
      * @example 
      * @param  mixed $name 
-     * @return 
+     * @return mixed
      */
     public function getBody($name)
     {
@@ -147,7 +144,6 @@ class Yaf_Response_Cli extends Yaf_Response_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public function response()
     {
