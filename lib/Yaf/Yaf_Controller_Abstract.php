@@ -11,49 +11,49 @@
 abstract class Yaf_Controller_Abstract
 {
     /**
-     * @var unknown $actions 
+     * @var $actions
      * 
      * @access public
      */
     public $actions;
 
     /**
-     * @var unknown $_module 
+     * @var $_module
      * 
      * @access protected
      */
     protected $_module;
 
     /**
-     * @var unknown $_name 
+     * @var $_name
      * 
      * @access protected
      */
     protected $_name;
 
     /**
-     * @var unknown $_request 
+     * @var $_request
      * 
      * @access protected
      */
     protected $_request;
 
     /**
-     * @var unknown $_response 
+     * @var $_response
      * 
      * @access protected
      */
     protected $_response;
 
     /**
-     * @var unknown $_invoke_args 
+     * @var $_invoke_args
      * 
      * @access protected
      */
     protected $_invoke_args;
 
     /**
-     * @var unknown $_view 
+     * @var $_view
      * 
      * @access protected
      */
@@ -65,7 +65,7 @@ abstract class Yaf_Controller_Abstract
      * @example 
      * @param  mixed $tpl 
      * @param array $parameters 
-     * @return 
+     * @return string
      */
     protected function render($tpl, Array $parameters)
     {
@@ -78,7 +78,7 @@ abstract class Yaf_Controller_Abstract
      * @example 
      * @param  mixed $tpl 
      * @param array $parameters 
-     * @return 
+     * @return bool
      */
     protected function display($tpl, Array $parameters)
     {
@@ -89,7 +89,7 @@ abstract class Yaf_Controller_Abstract
      * 
      *
      * @example 
-     * @return 
+     * @return Yaf_Request_Abstract
      */
     public function getRequest()
     {
@@ -100,7 +100,7 @@ abstract class Yaf_Controller_Abstract
      * 
      *
      * @example 
-     * @return 
+     * @return Yaf_Response_Abstract
      */
     public function getResponse()
     {
@@ -111,7 +111,7 @@ abstract class Yaf_Controller_Abstract
      * 
      *
      * @example 
-     * @return 
+     * @return string
      */
     public function getModuleName()
     {
@@ -122,7 +122,7 @@ abstract class Yaf_Controller_Abstract
      * 
      *
      * @example 
-     * @return 
+     * @return Yaf_View_Interface
      */
     public function getView()
     {
@@ -134,9 +134,9 @@ abstract class Yaf_Controller_Abstract
      *
      * @example 
      * @param array $options 
-     * @return 
+     * @return void
      */
-    public function initView(Array $options)
+    public function initView(array $options)
     {
     
     }
@@ -146,7 +146,7 @@ abstract class Yaf_Controller_Abstract
      *
      * @example 
      * @param  mixed $view_directory 
-     * @return 
+     * @return void
      */
     public function setViewpath($view_directory)
     {
@@ -157,7 +157,7 @@ abstract class Yaf_Controller_Abstract
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     public function getViewpath()
     {
@@ -172,7 +172,7 @@ abstract class Yaf_Controller_Abstract
      * @param  mixed $controller 
      * @param  mixed $action 
      * @param array $parameters 
-     * @return 
+     * @return void
      */
     public function forward($module, $controller, $action, Array $parameters)
     {
@@ -184,7 +184,7 @@ abstract class Yaf_Controller_Abstract
      *
      * @example 
      * @param  mixed $url 
-     * @return 
+     * @return void
      */
     public function redirect($url)
     {
@@ -195,7 +195,7 @@ abstract class Yaf_Controller_Abstract
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     public function getInvokeArgs()
     {
@@ -207,7 +207,7 @@ abstract class Yaf_Controller_Abstract
      *
      * @example 
      * @param  mixed $name 
-     * @return 
+     * @return void
      */
     public function getInvokeArg($name)
     {
@@ -218,7 +218,6 @@ abstract class Yaf_Controller_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     public final  function __construct()
     {
@@ -229,7 +228,6 @@ abstract class Yaf_Controller_Abstract
      * 
      *
      * @example 
-     * @return 
      */
     private final  function __clone()
     {

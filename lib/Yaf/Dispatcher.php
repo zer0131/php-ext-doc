@@ -135,7 +135,7 @@ final class Dispatcher
      *
      *
      * @example
-     * @return Dispatcher
+     * @return \Yaf\Dispatcher
      */
     public function enableView()
     {
@@ -159,7 +159,7 @@ final class Dispatcher
      * @example
      * @param  mixed $templates_dir
      * @param array $options
-     * @return View_Interface
+     * @return \Yaf\View_Interface
      */
     public function initView($templates_dir, Array $options)
     {
@@ -170,10 +170,10 @@ final class Dispatcher
      *
      *
      * @example
-     * @param  View_Interface $view
-     * @return Dispatcher
+     * @param  \Yaf\View_Interface $view
+     * @return \Yaf\Dispatcher
      */
-    public function setView(View_Interface $view)
+    public function setView(\Yaf\View_Interface $view)
     {
 
     }
@@ -182,10 +182,10 @@ final class Dispatcher
      *
      *
      * @example
-     * @param  Request_Abstract $request
-     * @return Dispatcher
+     * @param  \Yaf\Request_Abstract $request
+     * @return \Yaf\Dispatcher
      */
-    public function setRequest(Request_Abstract $request)
+    public function setRequest(\Yaf\Request_Abstract $request)
     {
 
     }
@@ -194,7 +194,7 @@ final class Dispatcher
      *
      *
      * @example
-     * @return Application
+     * @return \Yaf\Application
      */
     public function getApplication()
     {
@@ -205,7 +205,7 @@ final class Dispatcher
      *
      *
      * @example
-     * @return Router
+     * @return \Yaf\Router
      */
     public function getRouter()
     {
@@ -216,7 +216,7 @@ final class Dispatcher
      *
      *
      * @example
-     * @return Request_Abstract
+     * @return \Yaf\Request_Abstract
      */
     public function getRequest()
     {
@@ -229,7 +229,7 @@ final class Dispatcher
      * @example
      * @param  callable $callback
      * @param  int $error_types
-     * @return Dispatcher
+     * @return \Yaf\Dispatcher
      */
     public function setErrorHandler($callback, $error_types)
     {
@@ -241,7 +241,7 @@ final class Dispatcher
      *
      * @example
      * @param  string $module
-     * @return Dispatcher
+     * @return \Yaf\Dispatcher
      */
     public function setDefaultModule($module)
     {
@@ -253,7 +253,7 @@ final class Dispatcher
      *
      * @example
      * @param  string $controller
-     * @return Dispatcher
+     * @return \Yaf\Dispatcher
      */
     public function setDefaultController($controller)
     {
@@ -265,7 +265,7 @@ final class Dispatcher
      *
      * @example
      * @param  string $action
-     * @return Dispatcher
+     * @return \Yaf\Dispatcher
      */
     public function setDefaultAction($action)
     {
@@ -277,7 +277,7 @@ final class Dispatcher
      *
      * @example
      * @param  bool $flag
-     * @return Dispatcher
+     * @return \Yaf\Dispatcher
      */
     public function returnResponse($flag)
     {
@@ -289,7 +289,7 @@ final class Dispatcher
      *
      * @example
      * @param  bool $flag
-     * @return Dispatcher
+     * @return \Yaf\Dispatcher
      */
     public function autoRender($flag)
     {
@@ -301,7 +301,7 @@ final class Dispatcher
      *
      * @example
      * @param  bool $flag
-     * @return Dispatcher
+     * @return \Yaf\Dispatcher
      */
     public function flushInstantly($flag)
     {
@@ -312,7 +312,7 @@ final class Dispatcher
      *
      *
      * @example
-     * @return Dispatcher
+     * @return \Yaf\Dispatcher
      */
     public static  function getInstance()
     {
@@ -323,8 +323,8 @@ final class Dispatcher
      *
      *
      * @example
-     * @param  Response_Abstract $request
-     * @return Response_Abstract
+     * @param  \Yaf\Response_Abstract $request
+     * @return \Yaf\Response_Abstract
      */
     public function dispatch($request)
     {
@@ -336,7 +336,7 @@ final class Dispatcher
      *
      * @example
      * @param  bool $flag
-     * @return Dispatcher
+     * @return \Yaf\Dispatcher
      */
     public function throwException($flag)
     {
@@ -348,7 +348,7 @@ final class Dispatcher
      *
      * @example
      * @param  bool $flag
-     * @return Dispatcher
+     * @return \Yaf\Dispatcher
      */
     public function catchException($flag)
     {
@@ -359,8 +359,8 @@ final class Dispatcher
      *
      *
      * @example
-     * @param  Plugin_Abstract $plugin
-     * @return Dispatcher
+     * @param  \Yaf\Plugin_Abstract $plugin
+     * @return \Yaf\Dispatcher
      */
     public function registerPlugin($plugin)
     {

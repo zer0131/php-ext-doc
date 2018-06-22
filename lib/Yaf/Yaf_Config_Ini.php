@@ -8,10 +8,10 @@
 /**
 *
 */
-final class Yaf_Config_Ini extends Yaf_Config_Abstract implements Iterator, Traversable, ArrayAccess, Countable
+final class Yaf_Config_Ini extends Yaf_Config_Abstract implements Iterator, ArrayAccess, Countable
 {
     /**
-     * @var unknown $_config 
+     * @var $_config
      * 
      * @access protected
      */
@@ -30,7 +30,6 @@ final class Yaf_Config_Ini extends Yaf_Config_Abstract implements Iterator, Trav
      * @example 
      * @param  mixed $config_file 
      * @param  mixed $section 
-     * @return 
      */
     public function __construct($config_file, $section)
     {
@@ -41,8 +40,8 @@ final class Yaf_Config_Ini extends Yaf_Config_Abstract implements Iterator, Trav
      * 
      *
      * @example 
-     * @param  mixed $name 
-     * @return 
+     * @param  string $name
+     * @return void
      */
     public function __isset($name)
     {
@@ -53,10 +52,22 @@ final class Yaf_Config_Ini extends Yaf_Config_Abstract implements Iterator, Trav
      * 
      *
      * @example 
-     * @param  mixed $name 
-     * @return 
+     * @param  string $name
+     * @param mixed $value
+     * @return mixed
      */
-    public function get($name)
+    public function get($name, $value)
+    {
+    
+    }
+
+    /**
+     * 
+     *
+     * @example
+     * @return Yaf_Config_Abstract
+     */
+    public function set()
     {
     
     }
@@ -65,20 +76,7 @@ final class Yaf_Config_Ini extends Yaf_Config_Abstract implements Iterator, Trav
      * 
      *
      * @example 
-     * @param  mixed $name 
-     * @param  mixed $value 
-     * @return 
-     */
-    public function set($name, $value)
-    {
-    
-    }
-
-    /**
-     * 
-     *
-     * @example 
-     * @return 
+     * @return void
      */
     public function count()
     {
@@ -89,7 +87,7 @@ final class Yaf_Config_Ini extends Yaf_Config_Abstract implements Iterator, Trav
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     public function rewind()
     {
@@ -100,7 +98,7 @@ final class Yaf_Config_Ini extends Yaf_Config_Abstract implements Iterator, Trav
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     public function current()
     {
@@ -111,7 +109,7 @@ final class Yaf_Config_Ini extends Yaf_Config_Abstract implements Iterator, Trav
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     public function next()
     {
@@ -122,7 +120,7 @@ final class Yaf_Config_Ini extends Yaf_Config_Abstract implements Iterator, Trav
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     public function valid()
     {
@@ -133,7 +131,7 @@ final class Yaf_Config_Ini extends Yaf_Config_Abstract implements Iterator, Trav
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     public function key()
     {
@@ -144,7 +142,7 @@ final class Yaf_Config_Ini extends Yaf_Config_Abstract implements Iterator, Trav
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     public function toArray()
     {
@@ -155,7 +153,7 @@ final class Yaf_Config_Ini extends Yaf_Config_Abstract implements Iterator, Trav
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     public function readonly()
     {
@@ -166,8 +164,8 @@ final class Yaf_Config_Ini extends Yaf_Config_Abstract implements Iterator, Trav
      * 
      *
      * @example 
-     * @param  mixed $name 
-     * @return 
+     * @param  string $name
+     * @return void
      */
     public function offsetUnset($name)
     {
@@ -178,8 +176,8 @@ final class Yaf_Config_Ini extends Yaf_Config_Abstract implements Iterator, Trav
      * 
      *
      * @example 
-     * @param  mixed $name 
-     * @return 
+     * @param  string $name
+     * @return void
      */
     public function offsetGet($name)
     {
@@ -190,8 +188,8 @@ final class Yaf_Config_Ini extends Yaf_Config_Abstract implements Iterator, Trav
      * 
      *
      * @example 
-     * @param  mixed $name 
-     * @return 
+     * @param  string $name
+     * @return void
      */
     public function offsetExists($name)
     {
@@ -202,9 +200,9 @@ final class Yaf_Config_Ini extends Yaf_Config_Abstract implements Iterator, Trav
      * 
      *
      * @example 
-     * @param  mixed $name 
-     * @param  mixed $value 
-     * @return 
+     * @param  string $name
+     * @param  string $value
+     * @return void
      */
     public function offsetSet($name, $value)
     {
@@ -215,8 +213,8 @@ final class Yaf_Config_Ini extends Yaf_Config_Abstract implements Iterator, Trav
      * 
      *
      * @example 
-     * @param  mixed $name 
-     * @return 
+     * @param  string $name
+     * @return void
      */
     public function __get($name)
     {
@@ -227,9 +225,9 @@ final class Yaf_Config_Ini extends Yaf_Config_Abstract implements Iterator, Trav
      * 
      *
      * @example 
-     * @param  mixed $name 
-     * @param  mixed $value 
-     * @return 
+     * @param  string $name
+     * @param  string $value
+     * @return void
      */
     public function __set($name, $value)
     {

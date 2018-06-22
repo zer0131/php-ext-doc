@@ -27,10 +27,12 @@ abstract class Yaf_Config_Abstract
     /**
      * 
      *
-     * @example 
+     * @example
+     * @param string $name
+     * @param mixed $value
      * @return mixed
      */
-    public abstract  function get();
+    public abstract  function get($name , $value);
 
     /**
      * 

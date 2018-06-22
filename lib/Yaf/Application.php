@@ -129,10 +129,10 @@ final class Application
      *
      *
      * @example
-     * @param  Bootstrap_Abstract $bootstrap
+     * @param  \Yaf\Bootstrap_Abstract $bootstrap
      * @return void
      */
-    public function bootstrap(Bootstrap_Abstract $bootstrap = null)
+    public function bootstrap(\Yaf\Bootstrap_Abstract $bootstrap = null)
     {
 
     }
@@ -141,7 +141,7 @@ final class Application
      *
      *
      * @example
-     * @return Config_Abstract
+     * @return \Yaf\Config_Abstract
      */
     public function getConfig()
     {
@@ -163,7 +163,7 @@ final class Application
      *
      *
      * @example
-     * @return Dispatcher
+     * @return \Yaf\Dispatcher
      */
     public function getDispatcher()
     {
@@ -175,7 +175,7 @@ final class Application
      *
      * @example
      * @param  string $directory
-     * @return Application
+     * @return \Yaf\Application
      */
     public function setAppDirectory($directory)
     {
@@ -186,7 +186,7 @@ final class Application
      *
      *
      * @example
-     * @return Application
+     * @return \Yaf\Application
      */
     public function getAppDirectory()
     {
@@ -219,7 +219,7 @@ final class Application
      *
      *
      * @example
-     * @return Application
+     * @return \Yaf\Application
      */
     public function clearLastError()
     {

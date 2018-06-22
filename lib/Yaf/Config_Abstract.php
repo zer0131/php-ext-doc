@@ -29,15 +29,17 @@ abstract class Config_Abstract
      *
      *
      * @example
+     * @param string $name
+     * @param mixed $value
      * @return mixed
      */
-    public abstract  function get();
+    public abstract  function get($name , $value);
 
     /**
      *
      *
      * @example
-     * @return Config_Abstract
+     * @return \Yaf\Config_Abstract
      */
     public abstract  function set();
 

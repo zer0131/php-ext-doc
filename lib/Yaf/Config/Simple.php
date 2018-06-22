@@ -9,232 +9,230 @@
 *
 */
 namespace Yaf\Config;
-final class Simple extends \Yaf\Config_Abstract implements \Iterator,\Traversable,\ArrayAccess,\Countable
+final class Simple extends \Yaf\Config_Abstract implements \Iterator,\ArrayAccess,\Countable
 {
     /**
-     * @var unknown $_config 
-     * 
+     * @var $_config
+     *
      * @access protected
      */
     protected $_config;
 
     /**
-     * @var bool $_readonly 
-     * 
+     * @var bool $_readonly
+     *
      * @access protected
      */
     protected $_readonly    =    false;
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $config_file 
-     * @param  mixed $section 
-     * @return 
+     *
+     * @example
+     * @param  mixed $config_file
+     * @param  mixed $section
      */
     public function __construct($config_file, $section)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     * @return void
      */
     public function __isset($name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  string $name
+     * @param mixed $value
+     * @return mixed
      */
-    public function get($name)
+    public function get($name, $value)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @param  mixed $value 
-     * @return 
+     *
+     * @example
+     * @return \Yaf\Config_Abstract
      */
-    public function set($name, $value)
+    public function set()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return void
      */
     public function count()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  string $name
+     * @return void
      */
     public function offsetUnset($name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return void
      */
     public function rewind()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return void
      */
     public function current()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return void
      */
     public function next()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return void
      */
     public function valid()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return void
      */
     public function key()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return void
      */
     public function readonly()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return array
      */
     public function toArray()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @param  mixed $value 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     * @param  mixed $value
+     * @return void
      */
     public function __set($name, $value)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     * @return void
      */
     public function __get($name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     * @return void
      */
     public function offsetGet($name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     * @return void
      */
     public function offsetExists($name)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $name 
-     * @param  mixed $value 
-     * @return 
+     *
+     * @example
+     * @param  mixed $name
+     * @param  mixed $value
+     * @return void
      */
     public function offsetSet($name, $value)
     {
-    
+
     }
 
 }
