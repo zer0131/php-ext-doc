@@ -130,7 +130,7 @@ final class Application
      *
      * @example
      * @param  \Yaf\Bootstrap_Abstract $bootstrap
-     * @return void
+     * @return \Yaf\Application
      */
     public function bootstrap(\Yaf\Bootstrap_Abstract $bootstrap = null)
     {

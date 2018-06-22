@@ -129,11 +129,11 @@ final class Yaf_Application
      *
      * @example 
      * @param  Yaf_Bootstrap_Abstract $bootstrap
-     * @return void
+     * @return Yaf_Application
      */
     public function bootstrap(Yaf_Bootstrap_Abstract $bootstrap = null)
     {
-    
+
     }
 
     /**
