@@ -11,35 +11,35 @@
 final class Yaf_Dispatcher
 {
     /**
-     * @var unknown $_router 
+     * @var $_router
      * 
      * @access protected
      */
     protected $_router;
 
     /**
-     * @var unknown $_view 
+     * @var $_view
      * 
      * @access protected
      */
     protected $_view;
 
     /**
-     * @var unknown $_request 
+     * @var $_request
      * 
      * @access protected
      */
     protected $_request;
 
     /**
-     * @var unknown $_plugins 
+     * @var $_plugins
      * 
      * @access protected
      */
     protected $_plugins;
 
     /**
-     * @var unknown $_instance 
+     * @var $_instance
      * 
      * @access protected
      */
@@ -67,21 +67,21 @@ final class Yaf_Dispatcher
     protected $_instantly_flush    =    false;
 
     /**
-     * @var unknown $_default_module 
+     * @var $_default_module
      * 
      * @access protected
      */
     protected $_default_module;
 
     /**
-     * @var unknown $_default_controller 
+     * @var $_default_controller
      * 
      * @access protected
      */
     protected $_default_controller;
 
     /**
-     * @var unknown $_default_action 
+     * @var $_default_action
      * 
      * @access protected
      */
@@ -91,7 +91,6 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @return 
      */
     private function __construct()
     {
@@ -102,7 +101,7 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     private function __clone()
     {
@@ -113,7 +112,7 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     private function __sleep()
     {
@@ -124,7 +123,7 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     private function __wakeup()
     {
@@ -135,7 +134,7 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @return 
+     * @return Yaf_Dispatcher
      */
     public function enableView()
     {
@@ -146,7 +145,7 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @return 
+     * @return bool
      */
     public function disableView()
     {
@@ -159,7 +158,7 @@ final class Yaf_Dispatcher
      * @example 
      * @param  mixed $templates_dir 
      * @param array $options 
-     * @return 
+     * @return Yaf_View_Interface
      */
     public function initView($templates_dir, Array $options)
     {
@@ -170,10 +169,10 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @param  mixed $view 
-     * @return 
+     * @param  Yaf_View_Interface $view
+     * @return Yaf_Dispatcher
      */
-    public function setView($view)
+    public function setView(Yaf_View_Interface $view)
     {
     
     }
@@ -182,10 +181,10 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @param  mixed $request 
-     * @return 
+     * @param  Yaf_Request_Abstract $request
+     * @return Yaf_Dispatcher
      */
-    public function setRequest($request)
+    public function setRequest(Yaf_Request_Abstract $request)
     {
     
     }
@@ -194,7 +193,7 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @return 
+     * @return Yaf_Application
      */
     public function getApplication()
     {
@@ -205,7 +204,7 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @return 
+     * @return Yaf_Router
      */
     public function getRouter()
     {
@@ -216,7 +215,7 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @return 
+     * @return Yaf_Request_Abstract
      */
     public function getRequest()
     {
@@ -227,9 +226,9 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @param  mixed $callback 
-     * @param  mixed $error_types 
-     * @return 
+     * @param  callable $callback
+     * @param  int $error_types
+     * @return Yaf_Dispatcher
      */
     public function setErrorHandler($callback, $error_types)
     {
@@ -240,8 +239,8 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @param  mixed $module 
-     * @return 
+     * @param  string $module
+     * @return Yaf_Dispatcher
      */
     public function setDefaultModule($module)
     {
@@ -252,8 +251,8 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @param  mixed $controller 
-     * @return 
+     * @param  string $controller
+     * @return Yaf_Dispatcher
      */
     public function setDefaultController($controller)
     {
@@ -264,8 +263,8 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @param  mixed $action 
-     * @return 
+     * @param  string $action
+     * @return Yaf_Dispatcher
      */
     public function setDefaultAction($action)
     {
@@ -276,8 +275,8 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @param  mixed $flag 
-     * @return 
+     * @param  bool $flag
+     * @return Yaf_Dispatcher
      */
     public function returnResponse($flag)
     {
@@ -288,8 +287,8 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @param  mixed $flag 
-     * @return 
+     * @param  bool $flag
+     * @return Yaf_Dispatcher
      */
     public function autoRender($flag)
     {
@@ -300,8 +299,8 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @param  mixed $flag 
-     * @return 
+     * @param  bool $flag
+     * @return Yaf_Dispatcher
      */
     public function flushInstantly($flag)
     {
@@ -312,7 +311,7 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @return 
+     * @return Yaf_Dispatcher
      */
     public static  function getInstance()
     {
@@ -323,8 +322,8 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @param  mixed $request 
-     * @return 
+     * @param  Yaf_Response_Abstract $request
+     * @return Yaf_Response_Abstract
      */
     public function dispatch($request)
     {
@@ -335,8 +334,8 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @param  mixed $flag 
-     * @return 
+     * @param  bool $flag
+     * @return Yaf_Dispatcher
      */
     public function throwException($flag)
     {
@@ -347,8 +346,8 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @param  mixed $flag 
-     * @return 
+     * @param  bool $flag
+     * @return Yaf_Dispatcher
      */
     public function catchException($flag)
     {
@@ -359,8 +358,8 @@ final class Yaf_Dispatcher
      * 
      *
      * @example 
-     * @param  mixed $plugin 
-     * @return 
+     * @param  Yaf_Plugin_Abstract $plugin
+     * @return Yaf_Dispatcher
      */
     public function registerPlugin($plugin)
     {

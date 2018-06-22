@@ -12,360 +12,359 @@ namespace Yaf;
 final class Dispatcher
 {
     /**
-     * @var unknown $_router 
-     * 
+     * @var $_router
+     *
      * @access protected
      */
     protected $_router;
 
     /**
-     * @var unknown $_view 
-     * 
+     * @var $_view
+     *
      * @access protected
      */
     protected $_view;
 
     /**
-     * @var unknown $_request 
-     * 
+     * @var $_request
+     *
      * @access protected
      */
     protected $_request;
 
     /**
-     * @var unknown $_plugins 
-     * 
+     * @var $_plugins
+     *
      * @access protected
      */
     protected $_plugins;
 
     /**
-     * @var unknown $_instance 
-     * 
+     * @var $_instance
+     *
      * @access protected
      */
     protected static  $_instance;
 
     /**
-     * @var bool $_auto_render 
-     * 
+     * @var bool $_auto_render
+     *
      * @access protected
      */
     protected $_auto_render    =    true;
 
     /**
-     * @var bool $_return_response 
-     * 
+     * @var bool $_return_response
+     *
      * @access protected
      */
     protected $_return_response    =    false;
 
     /**
-     * @var bool $_instantly_flush 
-     * 
+     * @var bool $_instantly_flush
+     *
      * @access protected
      */
     protected $_instantly_flush    =    false;
 
     /**
-     * @var unknown $_default_module 
-     * 
+     * @var $_default_module
+     *
      * @access protected
      */
     protected $_default_module;
 
     /**
-     * @var unknown $_default_controller 
-     * 
+     * @var $_default_controller
+     *
      * @access protected
      */
     protected $_default_controller;
 
     /**
-     * @var unknown $_default_action 
-     * 
+     * @var $_default_action
+     *
      * @access protected
      */
     protected $_default_action;
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
      */
     private function __construct()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return void
      */
     private function __clone()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return void
      */
     private function __sleep()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return void
      */
     private function __wakeup()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return Dispatcher
      */
     public function enableView()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return bool
      */
     public function disableView()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $templates_dir 
-     * @param array $options 
-     * @return 
+     *
+     * @example
+     * @param  mixed $templates_dir
+     * @param array $options
+     * @return View_Interface
      */
     public function initView($templates_dir, Array $options)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $view 
-     * @return 
+     *
+     * @example
+     * @param  View_Interface $view
+     * @return Dispatcher
      */
-    public function setView($view)
+    public function setView(View_Interface $view)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $request 
-     * @return 
+     *
+     * @example
+     * @param  Request_Abstract $request
+     * @return Dispatcher
      */
-    public function setRequest($request)
+    public function setRequest(Request_Abstract $request)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return Application
      */
     public function getApplication()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return Router
      */
     public function getRouter()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return Request_Abstract
      */
     public function getRequest()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $callback 
-     * @param  mixed $error_types 
-     * @return 
+     *
+     * @example
+     * @param  callable $callback
+     * @param  int $error_types
+     * @return Dispatcher
      */
     public function setErrorHandler($callback, $error_types)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $module 
-     * @return 
+     *
+     * @example
+     * @param  string $module
+     * @return Dispatcher
      */
     public function setDefaultModule($module)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $controller 
-     * @return 
+     *
+     * @example
+     * @param  string $controller
+     * @return Dispatcher
      */
     public function setDefaultController($controller)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $action 
-     * @return 
+     *
+     * @example
+     * @param  string $action
+     * @return Dispatcher
      */
     public function setDefaultAction($action)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $flag 
-     * @return 
+     *
+     * @example
+     * @param  bool $flag
+     * @return Dispatcher
      */
     public function returnResponse($flag)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $flag 
-     * @return 
+     *
+     * @example
+     * @param  bool $flag
+     * @return Dispatcher
      */
     public function autoRender($flag)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $flag 
-     * @return 
+     *
+     * @example
+     * @param  bool $flag
+     * @return Dispatcher
      */
     public function flushInstantly($flag)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return Dispatcher
      */
     public static  function getInstance()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $request 
-     * @return 
+     *
+     * @example
+     * @param  Response_Abstract $request
+     * @return Response_Abstract
      */
     public function dispatch($request)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $flag 
-     * @return 
+     *
+     * @example
+     * @param  bool $flag
+     * @return Dispatcher
      */
     public function throwException($flag)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $flag 
-     * @return 
+     *
+     * @example
+     * @param  bool $flag
+     * @return Dispatcher
      */
     public function catchException($flag)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $plugin 
-     * @return 
+     *
+     * @example
+     * @param  Plugin_Abstract $plugin
+     * @return Dispatcher
      */
     public function registerPlugin($plugin)
     {
-    
+
     }
 
 }
