@@ -12,263 +12,261 @@ namespace Yaf;
 final class Application
 {
     /**
-     * @var unknown $config 
-     * 
+     * @var $config
+     *
      * @access protected
      */
     protected $config;
 
     /**
-     * @var unknown $dispatcher 
-     * 
+     * @var $dispatcher
+     *
      * @access protected
      */
     protected $dispatcher;
 
     /**
-     * @var unknown $_app 
-     * 
+     * @var $_app
+     *
      * @access protected
      */
     protected static  $_app;
 
     /**
-     * @var unknown $_modules 
-     * 
+     * @var $_modules
+     *
      * @access protected
      */
     protected $_modules;
 
     /**
-     * @var bool $_running 
-     * 
+     * @var bool $_running
+     *
      * @access protected
      */
     protected $_running    =    false;
 
     /**
-     * @var string $_environ 
-     * 
+     * @var string $_environ
+     *
      * @access protected
      */
     protected $_environ    =    'product';
 
     /**
-     * @var int $_err_no 
-     * 
+     * @var int $_err_no
+     *
      * @access protected
      */
     protected $_err_no    =    0;
 
     /**
-     * @var string $_err_msg 
-     * 
+     * @var string $_err_msg
+     *
      * @access protected
      */
     protected $_err_msg    =    '';
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $config 
-     * @param  mixed $environ 
-     * @return 
+     *
+     * @example
+     * @param  mixed $config
+     * @param  string $environ
      */
-    public function __construct($config, $environ)
+    public function __construct($config, string $environ = '')
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return void
      */
     public function run()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $entry 
-     * @param  mixed $... 
-     * @return 
+     *
+     * @example
+     * @param  callable $entry
+     * @param  mixed $param
+     * @return void
      */
-    public function execute($entry, $...)
+    public function execute(callable $entry, $param)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return void
      */
     public static  function app()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return string
      */
     public function environ()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $bootstrap 
-     * @return 
+     *
+     * @example
+     * @param  Bootstrap_Abstract $bootstrap
+     * @return void
      */
-    public function bootstrap($bootstrap)
+    public function bootstrap(Bootstrap_Abstract $bootstrap = null)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return Config_Abstract
      */
     public function getConfig()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return array
      */
     public function getModules()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return Dispatcher
      */
     public function getDispatcher()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @param  mixed $directory 
-     * @return 
+     *
+     * @example
+     * @param  string $directory
+     * @return Application
      */
     public function setAppDirectory($directory)
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return Application
      */
     public function getAppDirectory()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return int
      */
     public function getLastErrorNo()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return string
      */
     public function getLastErrorMsg()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return Application
      */
     public function clearLastError()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
      */
     public function __destruct()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return void
      */
     private function __clone()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return void
      */
     private function __sleep()
     {
-    
+
     }
 
     /**
-     * 
      *
-     * @example 
-     * @return 
+     *
+     * @example
+     * @return void
      */
     private function __wakeup()
     {
-    
+
     }
 
 }

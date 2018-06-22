@@ -11,28 +11,28 @@
 final class Yaf_Application
 {
     /**
-     * @var unknown $config 
+     * @var $config
      * 
      * @access protected
      */
     protected $config;
 
     /**
-     * @var unknown $dispatcher 
+     * @var $dispatcher
      * 
      * @access protected
      */
     protected $dispatcher;
 
     /**
-     * @var unknown $_app 
+     * @var $_app
      * 
      * @access protected
      */
     protected static  $_app;
 
     /**
-     * @var unknown $_modules 
+     * @var $_modules
      * 
      * @access protected
      */
@@ -71,10 +71,9 @@ final class Yaf_Application
      *
      * @example 
      * @param  mixed $config 
-     * @param  mixed $environ 
-     * @return 
+     * @param  string $environ
      */
-    public function __construct($config, $environ)
+    public function __construct($config, string $environ = '')
     {
     
     }
@@ -83,7 +82,7 @@ final class Yaf_Application
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     public function run()
     {
@@ -94,11 +93,11 @@ final class Yaf_Application
      * 
      *
      * @example 
-     * @param  mixed $entry 
-     * @param  mixed $... 
-     * @return 
+     * @param  callable $entry
+     * @param  mixed $param
+     * @return void
      */
-    public function execute($entry, $...)
+    public function execute(callable $entry, $param)
     {
     
     }
@@ -107,7 +106,7 @@ final class Yaf_Application
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     public static  function app()
     {
@@ -118,7 +117,7 @@ final class Yaf_Application
      * 
      *
      * @example 
-     * @return 
+     * @return string
      */
     public function environ()
     {
@@ -129,10 +128,10 @@ final class Yaf_Application
      * 
      *
      * @example 
-     * @param  mixed $bootstrap 
-     * @return 
+     * @param  Yaf_Bootstrap_Abstract $bootstrap
+     * @return void
      */
-    public function bootstrap($bootstrap)
+    public function bootstrap(Yaf_Bootstrap_Abstract $bootstrap = null)
     {
     
     }
@@ -141,7 +140,7 @@ final class Yaf_Application
      * 
      *
      * @example 
-     * @return 
+     * @return Yaf_Config_Abstract
      */
     public function getConfig()
     {
@@ -152,7 +151,7 @@ final class Yaf_Application
      * 
      *
      * @example 
-     * @return 
+     * @return array
      */
     public function getModules()
     {
@@ -163,7 +162,7 @@ final class Yaf_Application
      * 
      *
      * @example 
-     * @return 
+     * @return Yaf_Dispatcher
      */
     public function getDispatcher()
     {
@@ -174,8 +173,8 @@ final class Yaf_Application
      * 
      *
      * @example 
-     * @param  mixed $directory 
-     * @return 
+     * @param  string $directory
+     * @return Yaf_Application
      */
     public function setAppDirectory($directory)
     {
@@ -186,7 +185,7 @@ final class Yaf_Application
      * 
      *
      * @example 
-     * @return 
+     * @return Yaf_Application
      */
     public function getAppDirectory()
     {
@@ -197,7 +196,7 @@ final class Yaf_Application
      * 
      *
      * @example 
-     * @return 
+     * @return int
      */
     public function getLastErrorNo()
     {
@@ -208,7 +207,7 @@ final class Yaf_Application
      * 
      *
      * @example 
-     * @return 
+     * @return string
      */
     public function getLastErrorMsg()
     {
@@ -219,7 +218,7 @@ final class Yaf_Application
      * 
      *
      * @example 
-     * @return 
+     * @return Yaf_Application
      */
     public function clearLastError()
     {
@@ -230,7 +229,6 @@ final class Yaf_Application
      * 
      *
      * @example 
-     * @return 
      */
     public function __destruct()
     {
@@ -241,7 +239,7 @@ final class Yaf_Application
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     private function __clone()
     {
@@ -252,7 +250,7 @@ final class Yaf_Application
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     private function __sleep()
     {
@@ -263,7 +261,7 @@ final class Yaf_Application
      * 
      *
      * @example 
-     * @return 
+     * @return void
      */
     private function __wakeup()
     {
